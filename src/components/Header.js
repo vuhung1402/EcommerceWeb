@@ -82,7 +82,7 @@ function Header() {
                                 <div className="w-40 bg-primary rounded-lg flex flex-col absolute top-12 right-0">
                                     {
                                         user && user.email === "badao867@gmail.com" && (
-                                            <Link to={"/createItem"}>
+                                            <Link to={"/createItem"} onClick={() => {setIsMenu(false)}}>
                                                 <p className="px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-200 transition-all duration-100 ease-in-out text-textColor text-base">New item <MdAdd/> </p>
                                             </Link>
                                         )
